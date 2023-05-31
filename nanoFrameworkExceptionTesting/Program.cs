@@ -8,7 +8,7 @@ namespace nanoFrameworkExceptionTesting
     {
         public static void Main()
         {
-            Debug.WriteLine("Hello from nanoFramework!");
+            Console.WriteLine("Hello from nanoFramework!");
 
             var stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -18,7 +18,7 @@ namespace nanoFrameworkExceptionTesting
             try
             {
                 // throw Exception
-                Debug.WriteLine($"{dummyArray[1_000]}");
+                Console.WriteLine($"{dummyArray[1_000]}");
             }
             catch
             {
@@ -27,7 +27,7 @@ namespace nanoFrameworkExceptionTesting
 
             stopWatch.Stop();
 
-            Debug.WriteLine($"Exception took {stopWatch.ElapsedMilliseconds}ms");
+            Console.WriteLine($"Exception took {stopWatch.ElapsedMilliseconds}ms");
 
             Thread.Sleep(Timeout.Infinite);
         }
